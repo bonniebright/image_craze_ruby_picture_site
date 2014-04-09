@@ -1,0 +1,13 @@
+<h2> Upload a new photo! </h2>
+
+<%= form_for(@photo) do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+ <%= f.submit(:class => "btn btn-primary") %>
+<% end %>
