@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails'
+gem 'rails', '4.0.4'
 gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
@@ -10,7 +10,8 @@ gem 'turbolinks'
 gem 'paperclip'
 gem 'friendly_id'
 gem 'bcrypt'
-gem 'bootstrap-sass'
+gem 'less-rails-bootstrap'
+gem 'therubyracer'
 gem 'aws-sdk'
 
 group :development do
@@ -29,8 +30,4 @@ end
 group :test do
   gem 'minitest'
   gem 'shoulda-matchers'
-end
-
-group :production do
-  gem 'rails_12factor'
 end
