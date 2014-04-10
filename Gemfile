@@ -11,6 +11,7 @@ gem 'paperclip'
 gem 'friendly_id'
 gem 'bcrypt'
 gem 'bootstrap-sass'
+gem 'aws-sdk'
 
 group :development do
   gem 'better_errors'

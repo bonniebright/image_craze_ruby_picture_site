@@ -1,1 +1,6 @@
 <h2> Welcome to Image Craze</h2>
+<ul>
+<% @photos.each do |photo| %>
+  <li> <%= image_tag photo.image.url(:square) %> </li>
+<% end %>
+</ul>

@@ -77,4 +77,13 @@ ImageCraze::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['epicodus-imagecraze'],
+      :access_key_id => ENV['AKIAIIZ5URMTEM2OAGUA'],
+      :secret_access_key => ENV['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']
+    }
+  }
 end
